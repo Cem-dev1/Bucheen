@@ -14,9 +14,9 @@ export default function Hero() {
 
           <div className="absolute w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] bg-[#FFA085]/10 rounded-full blur-3xl -z-10" />
 
-          <div className="absolute left-4 md:left-1 top-1 w-[200px] sm:w-[240px] h-[400px] sm:h-[480px] bg-[#FFA085] rounded-[32px] p-3 shadow-[0_25px_50px_-12px_rgba(226,92,62,0.25)] border-[6px] border-white flex flex-col justify-end transform -rotate-1 transition-transform hover:rotate-0 duration-500 z-20">
+          <div className="absolute left-1 md:left-1 top-1 w-[200px] sm:w-[240px] h-[400px] sm:h-[480px] bg-[#FFB9AF] rounded-[32px] p-3 shadow-[0_25px_50px_-12px_rgba(226,92,62,0.25)] border-[6px] border-white flex flex-col justify-end transform -rotate-1 transition-transform hover:rotate-0 duration-500 z-20">
             <div className="bg-white rounded-[24px] p-4 text-center shadow-md">
-              <h2 className="text-[#E25C3E] text-base sm:text-lg font-bold leading-tight mb-2">
+              <h2 className="text-[#FFB9AF] text-base sm:text-lg font-bold leading-tight mb-2">
                 Find Your Dream<br />Partner Now
               </h2>
               <p className="text-gray-400 text-[10px] sm:text-[11px] leading-snug mb-4">
@@ -64,40 +64,46 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div>
-                <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-1.5 sm:text-sm sm:mb-2">Event Datting</h4>
-                <div className="flex gap-2">
-                  <div className="flex-1">
-                    <div className="w-full aspect-square bg-[#FFA085] rounded-2xl mb-1"></div>
-                    <p className="text-gray-800 font-medium text-[9px] sm:text-[10px] truncate">Wedding party</p>
-                  </div>
-                  <div className="flex-1">
-                    <div className="w-full aspect-square bg-[#A39AFA] rounded-2xl mb-1"></div>
-                    <p className="text-gray-800 font-medium text-[9px] sm:text-[10px] truncate">Birthday party</p>
-                  </div>
+
+            <div className="relative w-full">
+              <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Event Datting</h4>
+              
+            
+              <div className="flex gap-2 w-full overflow-hidden pb-1">
+
+                <div className="flex-1 min-w-0">
+                  <div className="w-full aspect-square bg-[#FFB9AF] rounded-2xl mb-1"></div>
+                  <p className="text-gray-800 font-medium text-[9px] truncate">Wedding party</p>
                 </div>
+
+                <div className="flex-1 min-w-0 -mr-12">
+                  <div className="w-full aspect-square bg-[#B3A3FF] rounded-l-2xl rounded-r-none mb-1"></div>
+                  <p className="text-gray-800 font-medium text-[9px] truncate">Birthday party</p>
+                </div>
+                
               </div>
+            </div>
 
               <div>
                 <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
                 <div className="flex gap-1"> 
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFA085] flex items-center justify-center overflow-hidden shadow-sm">
-                    <div className="scale-[0.25] sm:scale-[0.3]">
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#B3A3FF] flex items-center justify-center overflow-hidden shadow-sm">
+                    <div className="scale-[0.25] sm:scale-[0.2,5]">
                       <JavarAvatar />
                     </div>
                   </div>
-                 <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFD3B6] flex items-center justify-center overflow-hidden shadow-sm">
-                    <div className="scale-[0.25] sm:scale-[0.3]">
+                 <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFB9AF] flex items-center justify-center overflow-hidden shadow-sm">
+                    <div className="scale-[0.25] sm:scale-[0.25]">
                       <FausiahAvatar />
                     </div>
                   </div>
 
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#A39AFA] flex items-center justify-center overflow-hidden shadow-sm">
-                    <div className="scale-[0.25] sm:scale-[0.3]">
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFD492] flex items-center justify-center overflow-hidden shadow-sm">
+                    <div className="scale-[0.25] sm:scale-[0.25]">
                       <ShareylAvatar />
                     </div>
                   </div>
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#85D4FF] flex items-center justify-center shadow-sm">
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#614AD2] flex items-center justify-center shadow-sm">
                     <span className="text-sm font-bold text-white">+</span>
                   </div>
                 </div>
@@ -108,39 +114,40 @@ export default function Hero() {
 
         </div>
 
-        <div className="order-2 md:order-1 space-y-6 flex flex-col items-start z-10">
+      <div className="order-2 md:order-1 space-y-6 flex flex-col items-center md:items-start text-center md:text-left z-10">
+          
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-dark-purple leading-tight tracking-tight">
             Find <span className="text-brand">Match Now</span><br /> and Grow your Feelings
           </h1>
+          
           <p className="text-text-body text-base md:text-lg max-w-md leading-relaxed">
             There are so many platforms from this Pokan to make a task manager manage all your time, the data needed is very useful. and we have it all to get you to be successful
           </p>
 
-          <div className="w-full max-w-xl bg-white rounded-2xl p-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-row items-center justify-between gap-2">
-            
-            <div className="flex items-center gap-2 cursor-pointer group">
-              <span className="text-dark-purple font-black text-xs sm:text-sm">Male</span>
-              <span className="text-[8px] sm:text-[9px]">▼</span>
-            </div>
-            
-            <div className="h-6 w-[1px] bg-gray-200" />
+            <div className="w-full max-w-xl mx-auto relative">
+              
+              <div className="bg-white rounded-2xl p-4 md:pr-40 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex items-center justify-around md:justify-center md:gap-10">
+                <div className="flex items-center gap-2 cursor-pointer">
+                  <span className="text-dark-purple font-black text-sm">Male</span>
+                  <span className="text-[12px]">▼</span>
+                </div>
+                <div className="h-6 w-[2px] bg-gray-200" />
+                <div className="flex items-center gap-2 cursor-pointer">
+                  <span className="text-dark-purple font-black text-sm">Female</span>
+                  <span className="text-[12px]">▼</span>
+                </div>
+              </div>
 
-            <div className="flex items-center gap-2 cursor-pointer group">
-              <span className="text-dark-purple font-black text-xs sm:text-sm">Female</span>
-              <span className="text-[8px] sm:text-[9px]">▼</span>
+              <div className="mt-4 md:absolute md:right-2 md:top-2 md:bottom-2 md:mt-0">
+                <Button 
+                  variant="solid" 
+                  className="w-50% md:h-full bg-brand text-white font-bold px-8 py-4 md:py-0 rounded-2xl md:rounded-xl shadow-lg transition-all"
+                >
+                  Find Now
+                </Button>
+              </div>
             </div>
-
-            <div className="flex-shrink-0">
-              <Button 
-                variant="solid" 
-                className="bg-brand hover:bg-brand-dark text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-[0_4px_12px_rgba(255,114,94,0.2)] transition-all whitespace-nowrap"
-              >
-                Find Now
-              </Button>
-            </div>
-
           </div>
-        </div>
 
       </div>
     </section>

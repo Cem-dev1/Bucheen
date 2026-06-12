@@ -85,23 +85,23 @@ export default function Testimonials() {
           ))}
         </div>
         
-        <div className="flex md:hidden items-center justify-center gap-4 pt-2">
+       <div className="flex md:hidden items-center justify-center gap-4 pt-2">
           <button 
             onClick={() => scroll('left')}
-            className="w-12 h-12 rounded-full border-2 border-brand text-brand bg-[#FFF5F5] flex items-center justify-center transition-all duration-300 hover:bg-brand hover:text-white active:scale-95 focus:outline-none"
+            className="w-14 h-14 rounded-full border-[1.5px] border-[#FF725E] text-[#FF725E] flex items-center justify-center transition-all duration-300 hover:bg-[#FF725E] hover:text-white active:scale-95"
             aria-label="Previous testimonial"
           >
-            <svg className="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7" />
+            <svg className="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
           <button 
             onClick={() => scroll('right')}
-            className="w-12 h-12 rounded-full border-2 border-brand text-brand bg-[#FFF5F5] flex items-center justify-center transition-all duration-300 hover:bg-brand hover:text-white active:scale-95 focus:outline-none"
+            className="w-14 h-14 rounded-full bg-[#FF725E] text-white flex items-center justify-center transition-all duration-300 hover:bg-[#E65F4C] active:scale-95"
             aria-label="Next testimonial"
           >
-            <svg className="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
+            <svg className="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 6l6 6-6 6" />
             </svg>
           </button>
         </div>

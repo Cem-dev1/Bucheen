@@ -53,16 +53,17 @@ export default function PopularThisWeek() {
             There are so many platforms from this Pokan to make a task manager manage all your time, the data needed is very useful. and we have it all to get you to be successful
           </p>
         </div>
-
         <div 
           ref={scrollRef}
           onScroll={handleScroll}
-          className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 items-start overflow-x-auto md:overflow-x-visible snap-x snap-mandatory no-scrollbar pb-6 -mx-6 px-6 md:mx-0 md:px-0"
+          className="flex md:grid md:grid-cols-3 md:items-start justify-start md:justify-center overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-24 px-6 md:px-0 gap-6 md:gap-4"
         >
-        {users.map((user) => (
+          {users.map((user, index) => (
             <div 
               key={user.id} 
-              className={`min-w-[85vw] md:w-auto h-[480px] md:h-[521px] snap-center bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col ${user.transform}`}
+              className={`relative flex-shrink-0 w-[85vw] md:w-full h-[521px] snap-start bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col
+                ${index === 1 ? 'md:translate-y-16' : ''} 
+                ${index === 2 ? 'md:translate-y-32' : ''}`}
             >
               <div className={`h-[45%] ${user.bgTop} flex items-end justify-center relative overflow-hidden pt-6`}>
                 {user.id === 'javar' && <JavarAvatar />}
@@ -70,7 +71,7 @@ export default function PopularThisWeek() {
                 {user.id === 'shrerly' && <ShareylAvatar />}
               </div>
 
-              <div className="p-8 h-[50%] flex flex-col justify-start space-y-4">
+              <div className="p-8 h-[55%] flex flex-col justify-start space-y-4">
                 <h3 className="text-2xl font-black text-dark-purple tracking-tight">
                   {user.name}
                 </h3>
@@ -81,7 +82,7 @@ export default function PopularThisWeek() {
             </div>
           ))}
         </div>
-
+        
         <div className="flex justify-center items-center gap-2 md:hidden pt-2">
           {users.map((_, index) => (
             <span
