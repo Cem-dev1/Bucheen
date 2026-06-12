@@ -59,10 +59,10 @@ export default function PopularThisWeek() {
           onScroll={handleScroll}
           className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 items-start overflow-x-auto md:overflow-x-visible snap-x snap-mandatory no-scrollbar pb-6 -mx-6 px-6 md:mx-0 md:px-0"
         >
- {users.map((user) => (
+        {users.map((user) => (
             <div 
               key={user.id} 
-              className={`w-[328px] aspect-[3/5] snap-center bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col ${user.transform}`}
+              className={`min-w-[85vw] md:w-auto h-[480px] md:h-[521px] snap-center bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col ${user.transform}`}
             >
               <div className={`h-[45%] ${user.bgTop} flex items-end justify-center relative overflow-hidden pt-6`}>
                 {user.id === 'javar' && <JavarAvatar />}
