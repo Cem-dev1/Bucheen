@@ -59,30 +59,34 @@ export default function PopularThisWeek() {
           className="flex md:grid md:grid-cols-3 md:items-start justify-start md:justify-center overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-24 px-6 md:px-0 gap-6 md:gap-4"
         >
           {users.map((user, index) => (
-            <div 
-              key={user.id} 
-              className={`relative flex-shrink-0 w-[85vw] md:w-full h-[521px] snap-start bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col
-                ${index === 1 ? 'md:translate-y-16' : ''} 
-                ${index === 2 ? 'md:translate-y-32' : ''}`}
-            >
-              <div className={`h-[45%] ${user.bgTop} flex items-end justify-center relative overflow-hidden pt-6`}>
-                {user.id === 'javar' && <JavarAvatar />}
-                {user.id === 'fausiah' && <FausiahAvatar />}
-                {user.id === 'shrerly' && <ShareylAvatar />}
-              </div>
+        <div 
+          key={user.id} 
+          className={`relative flex-shrink-0 w-[85vw] md:w-full h-[521px] snap-start 
+            bg-white ${user.id === 'javar' ? 'md:bg-transparent' : 'md:bg-white'}
+            rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col
+            ${index === 1 ? 'md:translate-y-16' : ''} 
+            ${index === 2 ? 'md:translate-y-32' : ''}`}
+        >
+          <div className={`h-[45%] ${user.bgTop} flex items-end justify-center relative overflow-hidden pt-6`}>
+            {user.id === 'javar' && <JavarAvatar />}
+            {user.id === 'fausiah' && <FausiahAvatar />}
+            {user.id === 'shrerly' && <ShareylAvatar />}
+          </div>
 
-              <div className="p-8 h-[55%] flex flex-col justify-start space-y-4">
-                <h3 className="text-2xl font-black text-dark-purple tracking-tight">
-                  {user.name}
-                </h3>
-                <p className="text-text-muted text-sm leading-relaxed font-medium opacity-90 line-clamp-4">
-                  {user.text}
-                </p>
-              </div>
-            </div>
+          <div className={`p-8 h-[55%] flex flex-col justify-start space-y-4 rounded-b-[32px] 
+            bg-white ${user.id === 'javar' ? 'md:bg-transparent' : 'md:bg-white'}
+          `}>
+            <h3 className="text-2xl font-black text-dark-purple tracking-tight">
+              {user.name}
+            </h3>
+            <p className="text-text-muted text-sm leading-relaxed font-medium opacity-90 line-clamp-4">
+              {user.text}
+            </p>
+          </div>
+        </div>
           ))}
         </div>
-        
+
         <div className="flex justify-center items-center gap-2 md:hidden pt-2">
           {users.map((_, index) => (
             <span

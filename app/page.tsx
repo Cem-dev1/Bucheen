@@ -11,11 +11,20 @@ export default function Home() {
   return (
     <div className="bg-white font-sans text-slate-900 min-h-screen antialiased">
       <Header />
-      <main className="space-y-20 md:space-y-20 pb-20">
-        <Hero />
-        <FeatureOne />
-        <FeatureTwo />
-        <PopularThisWeek />
+      <main className="pb-20">
+        <div className="md:border-b md:border-gray-200">
+          <Hero />
+        </div>
+        <div className="md:border-t md:border-gray-200">
+         <FeatureOne />
+        </div>
+        <div className="md:border-t md:border-gray-200">
+            <FeatureTwo />
+        </div>
+        <div className="md:border-t md:border-gray-200">
+          <PopularThisWeek />
+        </div>
+        
         <Testimonials />
       </main>
       <Footer />

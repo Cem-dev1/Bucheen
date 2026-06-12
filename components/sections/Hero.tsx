@@ -4,6 +4,7 @@ import { Button } from '../common/Button';
 import { JavarAvatar } from '../graphics/JavarAvatar';
 import ShareylAvatar from '../graphics/ShareylAvatar';
 import FausiahAvatar from '../graphics/FausiahAvatar';
+import { JohnAvatar } from '../graphics/JohnAvatar';
 
 export default function Hero() {
   return (
@@ -13,34 +14,37 @@ export default function Hero() {
         <div className="order-1 md:order-2 relative flex justify-center items-center w-full h-[500px] sm:h-[550px] md:h-[600px]">
 
           <div className="absolute w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] bg-[#FFA085]/10 rounded-full blur-3xl -z-10" />
+              <div className="absolute left-1 md:left-1 top-1 w-[200px] sm:w-[240px] h-[400px] sm:h-[480px] 
+                bg-gradient-to-br from-[#FFBDB3] via-[#FFB2A7] to-[#FF6B56] 
+                rounded-[32px] p-3 shadow-[0_25px_50px_-12px_rgba(226,92,62,0.25)] 
+                flex flex-col justify-end transform -rotate-1 transition-transform hover:rotate-0 duration-500 z-20">
+                
+                <div className="bg-white rounded-[24px] p-4 text-center shadow-md">
+                  <h2 className="text-[#FFB9AF] text-base sm:text-lg font-bold leading-tight mb-2">
+                    Find Your Dream<br />Partner Now
+                  </h2>
+                  <p className="text-gray-400 text-[10px] sm:text-[11px] leading-snug mb-4">
+                    Find your partner now, all easy with us.
+                  </p>
+                  
+                  <div className="flex justify-center gap-1 mb-4">
+                    <span className="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+                    <span className="w-4 h-1.5 rounded-full bg-[#FF7A59]"></span>
+                  </div>
 
-          <div className="absolute left-1 md:left-1 top-1 w-[200px] sm:w-[240px] h-[400px] sm:h-[480px] bg-[#FFB9AF] rounded-[32px] p-3 shadow-[0_25px_50px_-12px_rgba(226,92,62,0.25)] border-[6px] border-white flex flex-col justify-end transform -rotate-1 transition-transform hover:rotate-0 duration-500 z-20">
-            <div className="bg-white rounded-[24px] p-4 text-center shadow-md">
-              <h2 className="text-[#FFB9AF] text-base sm:text-lg font-bold leading-tight mb-2">
-                Find Your Dream<br />Partner Now
-              </h2>
-              <p className="text-gray-400 text-[10px] sm:text-[11px] leading-snug mb-4">
-                Find your partner now, all easy with us.
-              </p>
-              
-              <div className="flex justify-center gap-1 mb-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
-                <span className="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
-                <span className="w-4 h-1.5 rounded-full bg-[#FF7A59]"></span>
+                  <div className="w-full bg-[#FF7A59] text-white text-xs font-semibold py-2.5 rounded-xl shadow-sm cursor-pointer text-center">
+                    Get Started
+                  </div>
+                </div>
               </div>
-
-              <div className="w-full bg-[#FF7A59] text-white text-xs font-semibold py-2.5 rounded-xl shadow-sm cursor-pointer text-center">
-                Get Started
-              </div>
-            </div>
-          </div>
 
           <div className="absolute right-4 md:right-6 top-16 sm:top-20 w-[200px] sm:w-[240px] h-[400px] sm:h-[480px] bg-white rounded-[32px] p-4 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)] border-[6px] border-white flex flex-col justify-between transform rotate-12 transition-transform hover:rotate-10 duration-500 z-10 select-none">
             
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-center gap-2">
                 <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#FFA085] flex items-center justify-center text-white text-xs font-bold">
-                  N
+                
                 </div>
                 <div>
                   <h3 className="text-gray-800 font-bold text-xs leading-none mb-0.5">Hello Naida</h3>
@@ -48,7 +52,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="bg-[#FFC4B4]/70 rounded-2xl p-2 sm:p-2.5">
+             <div className="bg-[#FFC4B4]/70 rounded-2xl p-2 sm:p-2.5">
                 <div className="bg-white rounded-xl p-1 sm:p-1.5 flex items-center justify-between mb-2 shadow-sm text-[10px] sm:text-[11px]">
                   <div className="flex-1 flex items-center justify-between px-1 sm:px-1.5 border-r border-gray-100 text-gray-700 font-medium">
                     <span>Male</span>
@@ -59,8 +63,11 @@ export default function Hero() {
                     <span className="text-[8px] sm:text-[9px]">▼</span>
                   </div>
                 </div>
-                <div className="w-full bg-[#FF7A59] text-white text-[10px] sm:text-[11px] font-semibold py-1.5 rounded-lg text-center">
-                  Find Now
+
+                <div className="flex flex-col items-center">
+                  <div className="w-16 bg-[#FF7A59] text-white text-[10px] sm:text-[11px] font-semibold py-1.5 rounded-lg text-center">
+                    Find Now
+                  </div>
                 </div>
               </div>
 
@@ -84,29 +91,35 @@ export default function Hero() {
               </div>
             </div>
 
-              <div>
-                <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
-                <div className="flex gap-1"> 
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#B3A3FF] flex items-center justify-center overflow-hidden shadow-sm">
-                    <div className="scale-[0.25] sm:scale-[0.2,5]">
-                      <JavarAvatar />
-                    </div>
-                  </div>
-                 <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFB9AF] flex items-center justify-center overflow-hidden shadow-sm">
-                    <div className="scale-[0.25] sm:scale-[0.25]">
-                      <FausiahAvatar />
-                    </div>
-                  </div>
+          <div>
+          <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
+          <div className="flex gap-0"> 
 
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFD492] flex items-center justify-center overflow-hidden shadow-sm">
-                    <div className="scale-[0.25] sm:scale-[0.25]">
-                      <ShareylAvatar />
-                    </div>
-                  </div>
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#614AD2] flex items-center justify-center shadow-sm">
-                    <span className="text-sm font-bold text-white">+</span>
-                  </div>
-                </div>
+            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#B3A3FF] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+              <div className="scale-[0.25]">
+                <JavarAvatar />
+              </div>
+            </div>
+
+            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#FFB9AF] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+              <div className="scale-[0.23]">
+                <FausiahAvatar />
+              </div>
+            </div>
+
+            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#FFD492] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+              <div className="scale-[0.23]">
+                <ShareylAvatar />
+              </div>
+            </div>
+
+            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#614AD2] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+              <div className="scale-[1.40]">
+                <JohnAvatar />
+              </div>
+            </div>
+          </div>
+
               </div>
             </div>
 
@@ -137,15 +150,14 @@ export default function Hero() {
                 <span className="text-[12px]">▼</span>
               </div>
             </div>
-
-            <div className="mt-4 md:absolute md:right-2 md:top-2 md:bottom-2 md:mt-0">
-              <Button 
-                variant="solid" 
-                className="w-full md:h-full bg-brand text-white font-bold px-8 py-4 md:py-0 rounded-2xl md:rounded-xl shadow-lg transition-all"
-              >
-                Find Now
-              </Button>
-            </div>
+          <div className="mt-4 md:absolute md:right-2 md:top-2 md:bottom-2 md:mt-0">
+            <Button 
+              variant="solid" 
+              className="w-1/2 md:w-auto md:h-full bg-brand text-white font-bold px-8 py-4 md:py-0 rounded-2xl md:rounded-xl shadow-lg transition-all"
+            >
+              Find Now
+            </Button>
+          </div>
           </div>
             
           </div>

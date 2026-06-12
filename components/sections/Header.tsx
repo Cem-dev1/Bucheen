@@ -12,7 +12,7 @@ export default function Header() {
       <div className="container mx-auto px-6 h-20 max-w-6xl flex items-center justify-between">
         
      <Link href="/" className="text-2xl font-black text-dark-blue tracking-tight">
-        <span className="text-[#8B5CF6]">Bu</span>
+        <span className="text-[#684aac]">Bu</span>
         <span className="text-brand">cheen.</span>
       </Link>
 
@@ -58,8 +58,12 @@ export default function Header() {
             isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
           }`}
         >
-
+      <Link href="/" className="text-2xl font-black text-dark-blue tracking-tight">
+        <span className="text-[#684aac]">Bu</span>
+        <span className="text-brand">cheen.</span>
+      </Link>
           <nav className="flex flex-col space-y-4 text-base font-bold text-dark-purple">
+
             <Link href="/features" onClick={() => setIsOpen(false)} className="hover:text-brand py-2 border-b border-gray-50">Features</Link>
             <Link href="/discover" onClick={() => setIsOpen(false)} className="hover:text-brand py-2 border-b border-gray-50">Discover</Link>
             <Link href="/stories" onClick={() => setIsOpen(false)} className="hover:text-brand py-2 border-b border-gray-50">Stories</Link>

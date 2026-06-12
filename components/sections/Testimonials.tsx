@@ -53,9 +53,11 @@ export default function Testimonials() {
         >
           {reviews.map((rev, index) => (
             <div 
-              key={index} 
-              className="min-w-[85vw] sm:min-w-[380px] md:min-w-0 snap-center bg-white p-8 rounded-[28px] border border-gray-100 shadow-[0_15px_40px_rgba(24,18,54,0.02)] flex flex-col justify-between space-y-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(24,18,54,0.05)]"
-            >
+                key={index} 
+                  className={`min-w-[85vw] sm:min-w-[380px] md:min-w-0 snap-center bg-white p-8 rounded-[28px] 
+                    ${index === 1 ? 'border-0 shadow-none' : 'border border-gray-100 shadow-[0_15px_40px_rgba(24,18,54,0.02)]'}
+                    flex flex-col justify-between space-y-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(24,18,54,0.05)]`}
+                >
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gray-100 border border-gray-100 rounded-full flex items-center justify-center text-sm shadow-sm">
