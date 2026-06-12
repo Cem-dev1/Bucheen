@@ -1,0 +1,28 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #FF725E;
+  --color-brand-dark: #E65F4C;
+  --color-dark-purple: #181236;
+  --color-text-muted: #5C5775;
+  --color-bg-warm: #FFF8F7; 
+  --color-bg-footer: #FFF2F0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #181236;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
