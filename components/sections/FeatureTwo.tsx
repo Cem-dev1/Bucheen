@@ -31,7 +31,7 @@ const steps = [
 
 export default function FeatureTwo() {
   return (
-    <section className="bg-bg-warm py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-6 max-w-6xl">
    
         <div className="mb-12">

@@ -58,8 +58,8 @@ export default function Testimonials() {
             >
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gray-50 border border-gray-100 rounded-full flex items-center justify-center text-sm shadow-sm">
-                    👤
+                  <div className="w-10 h-10 bg-gray-100 border border-gray-100 rounded-full flex items-center justify-center text-sm shadow-sm">
+                    
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-dark-purple">{rev.name}</h4>
@@ -70,8 +70,16 @@ export default function Testimonials() {
                   “{rev.text}”
                 </p>
               </div>
-              <div className="text-amber-400 text-xs tracking-wider pt-2 text-left">
-                ⭐⭐⭐⭐⭐
+            <div className="flex gap-0.4 pt-2">
+                {[...Array(5)].map((_, i) => (
+                  <svg 
+                    key={i} 
+                    className="w-5 h-5 text-[#FDC350] fill-current" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                ))}
               </div>
             </div>
           ))}

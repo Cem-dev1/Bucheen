@@ -1,7 +1,8 @@
-
 @import "tailwindcss";
 
 @theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   --color-brand: #FF725E;
   --color-brand-dark: #E65F4C;
   --color-dark-purple: #181236;
@@ -10,10 +11,14 @@
   --color-bg-footer: #FFF2F0;
 }
 
-body {
-  background-color: #FFFFFF;
-  color: #181236;
-  font-family: system-ui, -apple-system, sans-serif;
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+  
+  body {
+    background-color: #FFFFFF;
+    color: #181236;
+    font-family: var(--font-sans);
+  }
 }
 
 .no-scrollbar::-webkit-scrollbar {

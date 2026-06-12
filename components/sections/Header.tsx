@@ -11,8 +11,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
       <div className="container mx-auto px-6 h-20 max-w-6xl flex items-center justify-between">
         
-        <Link href="/" className="text-2xl font-black text-dark-purple tracking-tight">
-          Bucheen<span className="text-brand">.</span>
+        <Link href="/" className="text-2xl font-black text-dark-blue tracking-tight">
+          Bu<span className="text-brand">cheen.</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-text-body/80">

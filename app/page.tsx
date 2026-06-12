@@ -9,9 +9,9 @@ import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
-    <div className="bg-slate-50 font-sans text-slate-900 min-h-screen antialiased">
+    <div className="bg-white font-sans text-slate-900 min-h-screen antialiased">
       <Header />
-      <main className="space-y-20 md:space-y-28 pb-20">
+      <main className="space-y-20 md:space-y-20 pb-20">
         <Hero />
         <FeatureOne />
         <FeatureTwo />

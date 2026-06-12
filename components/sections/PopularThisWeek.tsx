@@ -17,14 +17,14 @@ const users = [
     id: 'fausiah',
     name: 'Fausiah Fera',
     text: 'Fera is a student from one of the famous universities in Tokyo and she is a very famous and very beautiful woman.',
-    bgTop: 'bg-[#B0A6FF]',
+    bgTop: 'bg-[#B3A3FF]',
     transform: 'md:translate-y-8'
   },
   {
     id: 'shrerly',
     name: 'Shreryl Olap',
     text: 'Olap is a very sweet woman with curly and blonde hair which makes her very beautiful and sweet. He works in the field of music, which is famous in Indonesia.',
-    bgTop: 'bg-[#FDF0D1]',
+    bgTop: 'bg-[#FFD492]',
     transform: 'md:translate-y-16'
   }
 ];
@@ -59,40 +59,24 @@ export default function PopularThisWeek() {
           onScroll={handleScroll}
           className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 items-start overflow-x-auto md:overflow-x-visible snap-x snap-mandatory no-scrollbar pb-6 -mx-6 px-6 md:mx-0 md:px-0"
         >
-          {users.map((user) => (
+ {users.map((user) => (
             <div 
               key={user.id} 
-              className={`min-w-[85vw] sm:min-w-[450px] md:min-w-0 snap-center bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col min-h-[420px] ${user.transform}`}
+              className={`w-[328px] aspect-[3/5] snap-center bg-white rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(24,18,54,0.03)] transition-all duration-300 hover:shadow-[0_30px_60px_rgba(24,18,54,0.07)] flex flex-col ${user.transform}`}
             >
-              <div className={`h-56 ${user.bgTop} flex items-end justify-center relative overflow-hidden pt-6`}>
-                {user.id === 'javar' && (
-                  <div className="transform translate-y-1.5">
-                    <JavarAvatar />
-                  </div>
-                )}
-                
-                {user.id === 'fausiah' && (
-                  <div className="transform translate-y-1.5">
-                    <FausiahAvatar />
-                  </div>
-                )}
-                
-                {user.id === 'shrerly' && (
-                  <div className="transform translate-y-1.5">
-                    <ShareylAvatar />
-                  </div>
-                )}
+              <div className={`h-[45%] ${user.bgTop} flex items-end justify-center relative overflow-hidden pt-6`}>
+                {user.id === 'javar' && <JavarAvatar />}
+                {user.id === 'fausiah' && <FausiahAvatar />}
+                {user.id === 'shrerly' && <ShareylAvatar />}
               </div>
 
-              <div className="p-8 flex-1 flex flex-col justify-between space-y-6">
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-black text-dark-purple tracking-tight">
-                    {user.name}
-                  </h3>
-                  <p className="text-text-muted text-[13px] md:text-sm leading-relaxed font-medium opacity-90">
-                    {user.text}
-                  </p>
-                </div>
+              <div className="p-8 h-[50%] flex flex-col justify-start space-y-4">
+                <h3 className="text-2xl font-black text-dark-purple tracking-tight">
+                  {user.name}
+                </h3>
+                <p className="text-text-muted text-sm leading-relaxed font-medium opacity-90 line-clamp-4">
+                  {user.text}
+                </p>
               </div>
             </div>
           ))}

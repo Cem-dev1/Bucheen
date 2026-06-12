@@ -3,6 +3,7 @@
 import { Button } from '../common/Button';
 import { JavarAvatar } from '../graphics/JavarAvatar';
 import ShareylAvatar from '../graphics/ShareylAvatar';
+import FausiahAvatar from '../graphics/FausiahAvatar';
 
 export default function Hero() {
   return (
@@ -77,32 +78,25 @@ export default function Hero() {
                 </div>
               </div>
 
-          {/* Most Popular */}
               <div>
                 <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
-                {/* Boşlukları artırmak için gap-3, üst üste binmeyi kaldırdık */}
-                <div className="flex gap-3"> 
-                  
-                  {/* 1. Javar Avatar */}
+                <div className="flex gap-1"> 
                   <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFA085] flex items-center justify-center overflow-hidden shadow-sm">
                     <div className="scale-[0.25] sm:scale-[0.3]">
                       <JavarAvatar />
                     </div>
                   </div>
-                  
-                  {/* 2. Orta Avatar */}
-                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFD3B6] flex items-center justify-center shadow-sm">
-                    <span className="text-sm font-bold text-white">+</span>
+                 <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFD3B6] flex items-center justify-center overflow-hidden shadow-sm">
+                    <div className="scale-[0.25] sm:scale-[0.3]">
+                      <FausiahAvatar />
+                    </div>
                   </div>
 
-                  {/* 3. Shareyl Avatar */}
                   <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#A39AFA] flex items-center justify-center overflow-hidden shadow-sm">
                     <div className="scale-[0.25] sm:scale-[0.3]">
                       <ShareylAvatar />
                     </div>
                   </div>
-
-                  {/* 4. Ekstra Avatar */}
                   <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#85D4FF] flex items-center justify-center shadow-sm">
                     <span className="text-sm font-bold text-white">+</span>
                   </div>
@@ -116,7 +110,7 @@ export default function Hero() {
 
         <div className="order-2 md:order-1 space-y-6 flex flex-col items-start z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-dark-purple leading-tight tracking-tight">
-            Find Match Now<br /> and Grow your <span className="text-brand">Feelings</span>
+            Find <span className="text-brand">Match Now</span><br /> and Grow your Feelings
           </h1>
           <p className="text-text-body text-base md:text-lg max-w-md leading-relaxed">
             There are so many platforms from this Pokan to make a task manager manage all your time, the data needed is very useful. and we have it all to get you to be successful
@@ -126,12 +120,14 @@ export default function Hero() {
             
             <div className="flex items-center gap-2 cursor-pointer group">
               <span className="text-dark-purple font-black text-xs sm:text-sm">Male</span>
+              <span className="text-[8px] sm:text-[9px]">▼</span>
             </div>
             
             <div className="h-6 w-[1px] bg-gray-200" />
 
             <div className="flex items-center gap-2 cursor-pointer group">
               <span className="text-dark-purple font-black text-xs sm:text-sm">Female</span>
+              <span className="text-[8px] sm:text-[9px]">▼</span>
             </div>
 
             <div className="flex-shrink-0">
