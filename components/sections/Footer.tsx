@@ -7,7 +7,8 @@ export default function Footer() {
 
         <div className="space-y-4">
           <h3 className="text-xl font-black text-dark-purple">
-            Bu<span className="text-brand">cheen</span>
+             <span className="text-[#8B5CF6]">Bu</span>
+            <span className="text-brand">cheen</span>
           </h3>
           <p className="text-text-muted text-xs leading-relaxed max-w-xs">
             The most trusted and simplest online dating platform of you, matches have been saving standard from a same platform made from happy.

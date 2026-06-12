@@ -124,29 +124,30 @@ export default function Hero() {
             There are so many platforms from this Pokan to make a task manager manage all your time, the data needed is very useful. and we have it all to get you to be successful
           </p>
 
-            <div className="w-full max-w-xl mx-auto relative">
-              
-              <div className="bg-white rounded-2xl p-4 md:pr-40 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex items-center justify-around md:justify-center md:gap-10">
-                <div className="flex items-center gap-2 cursor-pointer">
-                  <span className="text-dark-purple font-black text-sm">Male</span>
-                  <span className="text-[12px]">▼</span>
-                </div>
-                <div className="h-6 w-[2px] bg-gray-200" />
-                <div className="flex items-center gap-2 cursor-pointer">
-                  <span className="text-dark-purple font-black text-sm">Female</span>
-                  <span className="text-[12px]">▼</span>
-                </div>
+          <div className="w-full md:w-[440px] md:right-12 mx-auto relative">
+            
+            <div className="bg-white rounded-2xl p-4 md:pr-40 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex items-center justify-around md:justify-center md:gap-10">
+              <div className="flex items-center gap-2 cursor-pointer">
+                <span className="text-dark-purple font-black text-sm">Male</span>
+                <span className="text-[12px]">▼</span>
               </div>
-
-              <div className="mt-4 md:absolute md:right-2 md:top-2 md:bottom-2 md:mt-0">
-                <Button 
-                  variant="solid" 
-                  className="w-50% md:h-full bg-brand text-white font-bold px-8 py-4 md:py-0 rounded-2xl md:rounded-xl shadow-lg transition-all"
-                >
-                  Find Now
-                </Button>
+              <div className="h-6 w-[2px] bg-gray-200" />
+              <div className="flex items-center gap-2 cursor-pointer">
+                <span className="text-dark-purple font-black text-sm">Female</span>
+                <span className="text-[12px]">▼</span>
               </div>
             </div>
+
+            <div className="mt-4 md:absolute md:right-2 md:top-2 md:bottom-2 md:mt-0">
+              <Button 
+                variant="solid" 
+                className="w-full md:h-full bg-brand text-white font-bold px-8 py-4 md:py-0 rounded-2xl md:rounded-xl shadow-lg transition-all"
+              >
+                Find Now
+              </Button>
+            </div>
+          </div>
+            
           </div>
 
       </div>
