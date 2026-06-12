@@ -1,6 +1,8 @@
 'use client';
 
 import { Button } from '../common/Button';
+import { JavarAvatar } from '../graphics/JavarAvatar';
+import ShareylAvatar from '../graphics/ShareylAvatar';
 
 export default function Hero() {
   return (
@@ -75,13 +77,35 @@ export default function Hero() {
                 </div>
               </div>
 
+          {/* Most Popular */}
               <div>
-                <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-1 sm:mb-1.5">Most Popular</h4>
-                <div className="flex gap-1">
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-[#FFA085] border border-white flex items-center justify-center text-xs sm:text-base">🧑</div>
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-[#FFD3B6] border border-white flex items-center justify-center text-xs sm:text-base">👩</div>
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-[#A39AFA] border border-white flex items-center justify-center text-xs sm:text-base">👧</div>
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-[#85D4FF] border border-white flex items-center justify-center text-xs sm:text-base">🧔</div>
+                <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
+                {/* Boşlukları artırmak için gap-3, üst üste binmeyi kaldırdık */}
+                <div className="flex gap-3"> 
+                  
+                  {/* 1. Javar Avatar */}
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFA085] flex items-center justify-center overflow-hidden shadow-sm">
+                    <div className="scale-[0.25] sm:scale-[0.3]">
+                      <JavarAvatar />
+                    </div>
+                  </div>
+                  
+                  {/* 2. Orta Avatar */}
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#FFD3B6] flex items-center justify-center shadow-sm">
+                    <span className="text-sm font-bold text-white">+</span>
+                  </div>
+
+                  {/* 3. Shareyl Avatar */}
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#A39AFA] flex items-center justify-center overflow-hidden shadow-sm">
+                    <div className="scale-[0.25] sm:scale-[0.3]">
+                      <ShareylAvatar />
+                    </div>
+                  </div>
+
+                  {/* 4. Ekstra Avatar */}
+                  <div className="w-18 h-12 sm:w-18 sm:h-12 rounded-full border-2 border-white bg-[#85D4FF] flex items-center justify-center shadow-sm">
+                    <span className="text-sm font-bold text-white">+</span>
+                  </div>
                 </div>
               </div>
             </div>
