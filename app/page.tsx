@@ -9,7 +9,7 @@ import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
-    <div className="bg-white font-sans text-slate-900 min-h-screen antialiased">
+    <div className="bg-white font-sans text-slate-900 min-h-screen antialiased overflow-x-hidden">
       <Header />
       <main className="pb-20">
         <div className="md:border-b md:border-gray-200">
