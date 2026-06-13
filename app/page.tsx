@@ -24,7 +24,6 @@ export default function Home() {
         <div className="md:border-t md:border-gray-200">
           <PopularThisWeek />
         </div>
-        
         <Testimonials />
       </main>
       <Footer />

@@ -10,7 +10,31 @@ export default function Hero() {
   return (
     <section className="bg-bg-warm pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        
+         
+      <div className="absolute inset-0 z-0 pointer-events-none md:hidden overflow-visible">
+          <div className="absolute top-[60%] -left-10">
+            <svg width="258" height="282" viewBox="0 0 258 282" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.7" d="M92.3486 1.37402C169.099 1.37423 231.323 63.7278 231.323 140.651C231.323 217.575 169.099 279.929 92.3486 279.929C15.5979 279.929 -46.6259 217.575 -46.626 140.651C-46.626 63.7277 15.5979 1.37402 92.3486 1.37402Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+              <path opacity="0.7" d="M133.526 18.5686C201.18 18.5686 256.03 73.5319 256.03 141.339C256.03 209.146 201.18 264.11 133.526 264.11C65.8722 264.11 11.0232 209.146 11.0232 141.339C11.0232 73.5319 65.8722 18.5687 133.526 18.5686Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+              <path opacity="0.7" d="M109.506 69.4646C151.386 69.4648 185.341 103.488 185.341 145.466C185.341 187.443 151.386 221.467 109.506 221.468C67.6264 221.468 33.6711 187.443 33.6711 145.466C33.6713 103.488 67.6265 69.4646 109.506 69.4646Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+            </svg>
+          </div>
+          <div className="absolute top-[80%] right-[-40px]">
+            <svg width="194" height="210" viewBox="0 0 194 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.7" d="M104.503 1.37402C161.457 1.37402 207.633 47.6444 207.633 104.729C207.633 161.813 161.457 208.084 104.503 208.084C47.549 208.084 1.37402 161.813 1.37402 104.729C1.37424 47.6445 47.5491 1.37423 104.503 1.37402Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+              <path opacity="0.7" d="M135.165 14.1771C185.345 14.1773 226.03 54.9455 226.03 105.242C226.03 155.537 185.345 196.305 135.165 196.305C84.9843 196.305 44.2998 155.538 44.2996 105.242C44.2996 54.9454 84.9841 14.1771 135.165 14.1771Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+              <path opacity="0.7" d="M117.279 52.0743C148.268 52.0743 173.395 77.2504 173.395 108.314C173.395 139.377 148.268 164.554 117.279 164.554C86.2896 164.554 61.1633 139.377 61.1633 108.314C61.1636 77.2506 86.2897 52.0745 117.279 52.0743Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+            </svg>
+          </div>
+          <div className="absolute bottom-[-40%] left-0">
+            <svg width="124" height="137" viewBox="0 0 124 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.7" d="M43.2881 1.37402C80.2407 1.37424 110.202 31.3959 110.202 68.4355C110.202 105.475 80.2405 135.496 43.2881 135.496C6.33545 135.496 -23.6257 105.475 -23.626 68.4355C-23.626 31.3958 6.3353 1.37402 43.2881 1.37402Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+              <path opacity="0.7" d="M63.3232 9.74017C95.8498 9.74017 122.223 36.1655 122.223 68.7695C122.223 101.374 95.8499 127.8 63.3232 127.8C30.7966 127.8 4.42383 101.374 4.42383 68.7695C4.42398 36.1655 30.7967 9.7402 63.3232 9.74017Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+              <path opacity="0.7" d="M51.6357 34.5041C71.6217 34.5041 87.829 50.7413 87.8291 70.7775C87.8291 90.8139 71.6217 107.052 51.6357 107.052C31.6498 107.052 15.4434 90.8138 15.4434 70.7775C15.4435 50.7413 31.6499 34.5042 51.6357 34.5041Z" stroke="#FEEEDB" stroke-width="2.74739"/>
+            </svg>
+          </div>
+        </div>
+
         <div className="order-1 md:order-2 relative flex justify-center items-center w-full h-[500px] sm:h-[550px] md:h-[600px]">
 
           <div className="absolute w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] bg-[#FFA085]/10 rounded-full blur-3xl -z-10" />
@@ -91,40 +115,32 @@ export default function Hero() {
               </div>
             </div>
 
-          <div>
-          <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
-          <div className="flex gap-0"> 
+          <div className="relative mt-4">
+              <h4 className="text-gray-800 font-bold text-xs sm:text-sm mb-2">Most Popular</h4>
+              
+              <div className="flex gap-1"> 
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white bg-[#B3A3FF] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+                  <div className="scale-[0.25]"><JavarAvatar /></div>
+                </div>
 
-            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#B3A3FF] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
-              <div className="scale-[0.25]">
-                <JavarAvatar />
-              </div>
-            </div>
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white bg-[#FFB9AF] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+                  <div className="scale-[0.23]"><FausiahAvatar /></div>
+                </div>
 
-            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#FFB9AF] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
-              <div className="scale-[0.23]">
-                <FausiahAvatar />
-              </div>
-            </div>
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white bg-[#FFD492] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+                  <div className="scale-[0.23]"><ShareylAvatar /></div>
+                </div>
 
-            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#FFD492] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
-              <div className="scale-[0.23]">
-                <ShareylAvatar />
-              </div>
-            </div>
-
-            <div className="w-12 h-12 rounded-full border-2 border-white bg-[#614AD2] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
-              <div className="scale-[1.40]">
-                <JohnAvatar />
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white bg-[#614AD2] flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
+                  <div className="scale-[1.40]">
+                    <JohnAvatar />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-              </div>
-            </div>
-
           </div>
-
         </div>
 
       <div className="order-2 md:order-1 space-y-6 flex flex-col items-center md:items-start text-center md:text-left z-10">
